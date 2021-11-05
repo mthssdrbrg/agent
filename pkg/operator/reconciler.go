@@ -88,8 +88,6 @@ func (r *reconciler) Reconcile(ctx context.Context, req controller.Request) (con
 
 		// Metrics resources (may be a no-op if no metrics configured)
 		r.createMetricsConfigurationSecret,
-		r.createMetricsGoverningService,
-		r.createMetricsStatefulSets,
 
 		// Logs resources (may be a no-op if no logs configured)
 		r.createLogsConfigurationSecret,
